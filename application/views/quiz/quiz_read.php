@@ -89,7 +89,7 @@
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
 							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Welcome Admin</h6>
+								<h6 class="m-0 font-weight-bold text-primary">Informasi Quiz</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -100,13 +100,37 @@
 							<!-- Card Body -->
 							<div class="card-body">
 
-								<h2 style="margin-top:0px">Quiz Read</h2>
 								<table class="table">
 									<tr><td>Soal</td><td><?php echo $soal; ?></td></tr>
 									<tr><td>Expiration</td><td><?php echo $expiration; ?></td></tr>
 									<tr><td>Total Question</td><td><?php echo $total_question; ?></td></tr>
+
+								</table>
+<br/>
+								<br/>
+								<br/>
+<!--								Informasi Soal Untuk Quiz Ini-->
+
+								<table class="table">
+									<th>Soal</th>
+									<th>Pertanyaan</th>
+									<th>Jawaban</th>
+									<?php
+
+									$data=$this->db->query("SELECT * FROM question WHERE quiz_id=$id")->result();
+									$length=count($data);
+									$i=0;
+
+									while($i<$length)
+									{
+										echo "<tr><td>".$data[$i]->question."</td><td>".$data[$i]->option."</td><td>".$data[$i]->answer."</td></tr>";
+										$i++;
+									}
+
+									?>
 									<tr><td></td><td><a href="<?php echo site_url('quiz') ?>" class="btn btn-default">Cancel</a></td></tr>
 								</table>
+
 
 							</div>
 						</div>
