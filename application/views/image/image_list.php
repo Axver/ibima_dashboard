@@ -146,8 +146,7 @@
 												<?php
 												echo anchor(site_url('image/read/'.$image->image),'Read');
 												echo ' | ';
-												echo anchor(site_url('image/update/'.$image->image),'Update');
-												echo ' | ';
+
 												echo anchor(site_url('image/delete/'.$image->image),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>
 											</td>
