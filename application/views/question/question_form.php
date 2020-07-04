@@ -102,9 +102,31 @@
 
 
 								<form action="<?php echo $action; ?>" method="post">
+
 									<div class="form-group">
-										<label for="varchar">Quiz Id <?php echo form_error('quiz_id') ?></label>
-										<input type="text" class="form-control" name="quiz_id" id="quiz_id" placeholder="Quiz Id" value="<?php echo $quiz_id; ?>" />
+
+										<div class="form-group">
+											<label for="varchar">Quiz Id <?php echo form_error('quiz_id') ?></label>
+											<select class="form-control" name="quiz_id" id="quiz_id">
+												<?php
+												$row=$this->db->query("SELECT * FROM quiz")->result();
+
+												?>
+
+												<?php
+												$length=count($row);
+												$i=0;
+												while($i<$length)
+												{
+													echo "<option value='".$row[$i]->id."'>".$row[$i]->soal."</option>";
+													$i++;
+												}
+												?>
+											</select>
+											<!--										<input type="text" class="form-control" name="quiz_id" id="quiz_id" placeholder="Quiz Id" value="--><?php //echo $quiz_id; ?><!--" />-->
+										</div>
+										<!--
+<input type="text" class="form-control" name="quiz_id" id="quiz_id" placeholder="Quiz Id" value="--><?php //echo $quiz_id; ?><!--" />-->
 									</div>
 									<div class="form-group">
 										<label for="varchar">Question <?php echo form_error('question') ?></label>
@@ -112,12 +134,22 @@
 									</div>
 									<div class="form-group">
 										<label for="varchar">Option <?php echo form_error('option') ?></label>
-										<input type="text" class="form-control" name="option" id="option" placeholder="Option" value="<?php echo $option; ?>" />
+										<input type="text" class="form-control" name="option" id="option" placeholder="[Jawaban Satu,Jawaban Dua,Jawaban Tiga,Jawaban Empat]" value="<?php echo $option; ?>" />
 									</div>
 									<div class="form-group">
 										<label for="varchar">Answer <?php echo form_error('answer') ?></label>
-										<input type="text" class="form-control" name="answer" id="answer" placeholder="Answer" value="<?php echo $answer; ?>" />
+										<input type="text" class="form-control" name="answer" id="answer" placeholder="Jawaban Dua" value="<?php echo $answer; ?>" />
 									</div>
+									<?php
+									if($id=='')
+									{
+										$d=strtotime("tomorrow");
+										$new_id=date("Y-m-d h:i:sa", $d);
+										$new_id=md5($new_id);
+
+										$id=$new_id;
+									}
+									?>
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
 									<a href="<?php echo site_url('question') ?>" class="btn btn-default">Cancel</a>
@@ -126,6 +158,10 @@
 							</div>
 						</div>
 					</div>
+					<script>
+                        let sp='<?php echo $quiz_id ?>';
+                        $("#quiz_id").val(sp).change();
+					</script>
 
 
 				</div>

@@ -81,6 +81,7 @@ class Quiz extends CI_Controller
             $this->create();
         } else {
             $data = array(
+		'id' => $this->input->post('id',TRUE),
 		'soal' => $this->input->post('soal',TRUE),
 		'expiration' => $this->input->post('expiration',TRUE),
 		'total_question' => $this->input->post('total_question',TRUE),

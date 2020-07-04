@@ -83,6 +83,8 @@ class Question extends CI_Controller
             $this->create();
         } else {
             $data = array(
+
+		'id' => $this->input->post('id',TRUE),
 		'quiz_id' => $this->input->post('quiz_id',TRUE),
 		'question' => $this->input->post('question',TRUE),
 		'option' => $this->input->post('option',TRUE),

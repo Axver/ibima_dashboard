@@ -103,6 +103,28 @@
 
 								<form action="<?php echo $action; ?>" method="post">
 									<div class="form-group">
+										<label for="varchar">Soal <?php echo form_error('id') ?></label>
+										<select class="form-control" name="id" id="id">
+											<?php
+											$row=$this->db->query("SELECT * FROM topik")->result();
+
+											?>
+
+											<?php
+											$length=count($row);
+											$i=0;
+											while($i<$length)
+											{
+												echo "<option value='".$row[$i]->id."'>".$row[$i]->nama_topik."</option>";
+												$i++;
+											}
+											?>
+										</select>
+
+
+
+									</div>
+									<div class="form-group">
 										<label for="varchar">Soal <?php echo form_error('soal') ?></label>
 										<input type="text" class="form-control" name="soal" id="soal" placeholder="Soal" value="<?php echo $soal; ?>" />
 									</div>
@@ -114,7 +136,7 @@
 										<label for="int">Total Question <?php echo form_error('total_question') ?></label>
 										<input type="text" class="form-control" name="total_question" id="total_question" placeholder="Total Question" value="<?php echo $total_question; ?>" />
 									</div>
-									<input type="hidden" name="id" value="<?php echo $id; ?>" />
+
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
 									<a href="<?php echo site_url('quiz') ?>" class="btn btn-default">Cancel</a>
 								</form>
@@ -122,7 +144,10 @@
 							</div>
 						</div>
 					</div>
-
+					<script>
+                        let sp='<?php echo $id ?>';
+                        $("#id").val(sp).change();
+					</script>
 
 				</div>
 
