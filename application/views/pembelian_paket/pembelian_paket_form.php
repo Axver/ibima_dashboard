@@ -14,7 +14,7 @@
         <form action="<?php echo $action; ?>" method="post">
 	    <div class="form-group">
             <label for="varchar">Id <?php echo form_error('id') ?></label>
-            <input type="text" class="form-control" name="id" id="id" placeholder="Id" value="<?php echo $id; ?>" />
+            <input type="hidden" class="form-control" name="id" id="id" placeholder="Id" value="<?php echo $id; ?>" />
         </div>
 	    <div class="form-group">
             <label for="varchar">List Email <?php echo form_error('list_email') ?></label>

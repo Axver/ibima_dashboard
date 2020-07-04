@@ -103,21 +103,40 @@
 
 								<form action="<?php echo $action; ?>" method="post">
 									<div class="form-group">
-										<label for="varchar">Id Produk <?php echo form_error('id_produk') ?></label>
-										<input type="text" class="form-control" name="id_produk" id="id_produk" placeholder="Id Produk" value="<?php echo $id_produk; ?>" />
+
+										<input type="hidden" class="form-control" name="id_produk" id="id_produk" placeholder="Id Produk" value="<?php echo $id_produk; ?>" />
 									</div>
 									<div class="form-group">
-										<label for="datetime">Created At <?php echo form_error('created_at') ?></label>
-										<input type="datetime-local" class="form-control" name="created_at" id="created_at" placeholder="Created At" value="<?php echo $created_at; ?>" />
+
+										<input type="hidden" class="form-control" name="created_at" id="created_at" placeholder="Created At" value="<?php echo $created_at; ?>" />
 									</div>
 									<div class="form-group">
-										<label for="varchar">Pembelian Id Pembelian <?php echo form_error('pembelian_id_pembelian') ?></label>
-										<input type="text" class="form-control" name="pembelian_id_pembelian" id="pembelian_id_pembelian" placeholder="Pembelian Id Pembelian" value="<?php echo $pembelian_id_pembelian; ?>" />
+
+										<input type="hidden" class="form-control" name="pembelian_id_pembelian" id="pembelian_id_pembelian" placeholder="Pembelian Id Pembelian" value="<?php echo $pembelian_id_pembelian; ?>" />
+									</div>
+									<div class="form-group">
+
+										<input type="hidden" class="form-control" name="bukti_pembayaran" id="bukti_pembayaran" placeholder="Bukti Pembayaran" value="<?php echo $bukti_pembayaran; ?>" />
+									</div>
+									<div class="form-group">
+										<label for="varchar">Status Pembayaran <?php echo form_error('status_pembayaran') ?></label>
+										<select class="form-control" name="status_pembayaran" id="status_pembayaran">
+											<option value="no">No</option>
+											<option value="yes">Yes</option>
+
+										</select>
+
 									</div>
 									<input type="hidden" name="id_pembelian" value="<?php echo $id_pembelian; ?>" />
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
 									<a href="<?php echo site_url('pembelian_produk') ?>" class="btn btn-default">Cancel</a>
 								</form>
+
+
+								<script>
+                                    let sp='<?php echo $status_pembayaran ?>';
+                                    $("#status_pembayaran").val(sp).change();
+								</script>
 
 							</div>
 						</div>

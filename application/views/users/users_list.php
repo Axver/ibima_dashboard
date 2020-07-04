@@ -102,7 +102,7 @@
 
 								<div class="row" style="margin-bottom: 10px">
 									<div class="col-md-4">
-										<?php echo anchor(site_url('users/create'),'Create', 'class="btn btn-primary"'); ?>
+<!--										--><?php //echo anchor(site_url('users/create'),'Create', 'class="btn btn-primary"'); ?>
 									</div>
 									<div class="col-md-4 text-center">
 										<div style="margin-top: 8px" id="message">
@@ -155,8 +155,7 @@
 											<td style="text-align:center" width="200px">
 												<?php
 												echo anchor(site_url('users/read/'.$users->id),'Read');
-												echo ' | ';
-												echo anchor(site_url('users/update/'.$users->id),'Update');
+
 												echo ' | ';
 												echo anchor(site_url('users/delete/'.$users->id),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>

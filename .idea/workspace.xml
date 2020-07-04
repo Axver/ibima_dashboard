@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="" />
+    <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/component/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/component/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/component/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/component/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian/pembelian_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian/pembelian_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/users/users_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/users_list.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,9 +29,15 @@
       <executable />
     </execution>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1eCIDDCooX3AN9Kj2dGj0ZtvbX2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -42,7 +63,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593819025269</updated>
-      <workItem from="1593819027541" duration="9718000" />
+      <workItem from="1593819027541" duration="13188000" />
     </task>
     <servers />
   </component>
@@ -51,5 +72,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName=".htaccess" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

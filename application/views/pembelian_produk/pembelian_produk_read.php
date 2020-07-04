@@ -89,7 +89,7 @@
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
 							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Welcome Admin</h6>
+								<h6 class="m-0 font-weight-bold text-primary">Informasi Pembelian Produk</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -99,14 +99,40 @@
 							</div>
 							<!-- Card Body -->
 							<div class="card-body">
-								<h2 style="margin-top:0px">Pembelian_produk Read</h2>
-								<table class="table">
-									<tr><td>Id Produk</td><td><?php echo $id_produk; ?></td></tr>
-									<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
-									<tr><td>Pembelian Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
-									<tr><td></td><td><a href="<?php echo site_url('pembelian_produk') ?>" class="btn btn-default">Cancel</a></td></tr>
-								</table>
 
+
+							<div class="row">
+								<div class="col-sm-6">
+									<table class="table">
+										<tr><td>Nama Produk</td><td><?php echo $nama_topik; ?></td></tr>
+										<tr><td>Deskripsi</td><td><?php echo $deskripsi; ?></td></tr>
+										<tr><td>Thumbnail</td><td><?php echo $thumbnail; ?></td></tr>
+										<tr><td>Harga</td><td><?php echo $harga; ?></td></tr>
+										<tr><td>Zoom</td><td><?php if($zoom==0)
+												{
+													echo "No";
+												}
+												else
+												{
+													echo "Yes";
+												}?></td></tr>
+										<tr><td>Id Produk</td><td><?php echo $id_produk; ?></td></tr>
+										<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
+										<tr><td>Pembelian Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
+										<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran; ?></td></tr>
+										<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran; ?></td></tr>
+
+										<tr><td></td><td><a href="<?php echo site_url('pembelian_produk') ?>" class="btn btn-default">Cancel</a></td></tr>
+									</table>
+								</div>
+
+								<div class="col-sm-6">
+									*URL Image Diganti Dengan URL Endpoint Laravel
+									<br/>
+									<img style="height:400px; src="<?php echo 'www.urllaravel.com/'.$bukti_pembayaran ?>" alt="Gambar Tidak Ada">
+
+								</div>
+							</div>
 
 							</div>
 						</div>

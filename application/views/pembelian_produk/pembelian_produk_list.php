@@ -100,9 +100,10 @@
 							<!-- Card Body -->
 							<div class="card-body">
 
+
 								<div class="row" style="margin-bottom: 10px">
 									<div class="col-md-4">
-										<?php echo anchor(site_url('pembelian_produk/create'),'Create', 'class="btn btn-primary"'); ?>
+<!--										--><?php //echo anchor(site_url('pembelian_produk/create'),'Create', 'class="btn btn-primary"'); ?>
 									</div>
 									<div class="col-md-4 text-center">
 										<div style="margin-top: 8px" id="message">
@@ -136,6 +137,8 @@
 										<th>Id Produk</th>
 										<th>Created At</th>
 										<th>Pembelian Id Pembelian</th>
+										<th>Bukti Pembayaran</th>
+										<th>Status Pembayaran</th>
 										<th>Action</th>
 									</tr><?php
 									foreach ($pembelian_produk_data as $pembelian_produk)
@@ -146,6 +149,8 @@
 											<td><?php echo $pembelian_produk->id_produk ?></td>
 											<td><?php echo $pembelian_produk->created_at ?></td>
 											<td><?php echo $pembelian_produk->pembelian_id_pembelian ?></td>
+											<td><?php echo $pembelian_produk->bukti_pembayaran ?></td>
+											<td><?php echo $pembelian_produk->status_pembayaran ?></td>
 											<td style="text-align:center" width="200px">
 												<?php
 												echo anchor(site_url('pembelian_produk/read/'.$pembelian_produk->id_pembelian),'Read');
@@ -168,7 +173,6 @@
 										<?php echo $pagination ?>
 									</div>
 								</div>
-
 
 							</div>
 						</div>
@@ -224,6 +228,7 @@
 		</div>
 	</div>
 </div>
+
 
 
 

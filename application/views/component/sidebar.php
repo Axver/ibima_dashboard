@@ -70,7 +70,7 @@
 		<div id="collapseTwo121" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Setting</h6>
-				<a class="collapse-item" href="<?php echo base_url('pembelian') ?>">Pembelian</a>
+<!--				<a class="collapse-item" href="--><?php //echo base_url('pembelian') ?><!--">Pembelian</a>-->
 				<a class="collapse-item" href="<?php echo base_url('pembelian_produk') ?>">Pembelian Produk</a>
 				<a class="collapse-item" href="<?php echo base_url('pembelian_paket') ?>">Pembelian Paket</a>
 
