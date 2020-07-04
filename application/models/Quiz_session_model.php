@@ -24,8 +24,10 @@ class Quiz_session_model extends CI_Model
 
     // get data by id
     function get_by_id($id)
-    {
-        $this->db->where($this->id, $id);
+    {	$this->db->select("*");
+		$this->db->join('users', 'quiz_session.id = users.id', 'left')
+			->join('quiz', 'quiz_session.quiz_id = quiz.id', 'left')
+			->where("quiz_session.id_session", $id);
         return $this->db->get($this->table)->row();
     }
     

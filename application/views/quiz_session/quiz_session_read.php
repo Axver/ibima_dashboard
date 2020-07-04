@@ -102,6 +102,8 @@
 
 								<table class="table">
 									<tr><td>Starting Time</td><td><?php echo $starting_time; ?></td></tr>
+									<tr><td>Nama Peserta</td><td><?php echo $name; ?></td></tr>
+									<tr><td>Quiz Yang Dikerjakan</td><td><?php echo $soal; ?></td></tr>
 									<tr><td>Wrong Count</td><td><?php echo $wrong_count; ?></td></tr>
 									<tr><td>Correct Count</td><td><?php echo $correct_count; ?></td></tr>
 									<tr><td>Score</td><td><?php echo $score; ?></td></tr>

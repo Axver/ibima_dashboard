@@ -103,7 +103,7 @@
 
 								<div class="row" style="margin-bottom: 10px">
 									<div class="col-md-4">
-										<?php echo anchor(site_url('quiz_session/create'),'Create', 'class="btn btn-primary"'); ?>
+<!--										--><?php //echo anchor(site_url('quiz_session/create'),'Create', 'class="btn btn-primary"'); ?>
 									</div>
 									<div class="col-md-4 text-center">
 										<div style="margin-top: 8px" id="message">
@@ -159,8 +159,7 @@
 												<?php
 												echo anchor(site_url('quiz_session/read/'.$quiz_session->id_session),'Read');
 												echo ' | ';
-												echo anchor(site_url('quiz_session/update/'.$quiz_session->id_session),'Update');
-												echo ' | ';
+
 												echo anchor(site_url('quiz_session/delete/'.$quiz_session->id_session),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>
 											</td>

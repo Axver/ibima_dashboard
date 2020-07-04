@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Quiz.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/question/question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/question/question_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/quiz/quiz_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz/quiz_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Quiz_session.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Quiz_session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Quiz_session_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Quiz_session_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_read.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593819025269</updated>
-      <workItem from="1593819027541" duration="21993000" />
+      <workItem from="1593819027541" duration="23152000" />
     </task>
     <servers />
   </component>

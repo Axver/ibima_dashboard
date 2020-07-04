@@ -25,7 +25,7 @@ class Quiz_session extends CI_Controller
             $config['first_url'] = base_url() . 'quiz_session/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Quiz_session_model->total_rows($q);
         $quiz_session = $this->Quiz_session_model->get_limit_data($config['per_page'], $start, $q);
@@ -49,6 +49,8 @@ class Quiz_session extends CI_Controller
         if ($row) {
             $data = array(
 		'id_session' => $row->id_session,
+		'name' => $row->name,
+		'soal' => $row->soal,
 		'starting_time' => $row->starting_time,
 		'wrong_count' => $row->wrong_count,
 		'correct_count' => $row->correct_count,
