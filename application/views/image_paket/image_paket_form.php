@@ -103,6 +103,9 @@
 
 								<form action="<?php echo $action; ?>" method="post">
 									<input type="hidden" name="id" value="<?php echo $id; ?>" />
+									<select name="image" id="image">
+
+									</select>
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
 									<a href="<?php echo site_url('image_paket') ?>" class="btn btn-default">Cancel</a>
 								</form>
