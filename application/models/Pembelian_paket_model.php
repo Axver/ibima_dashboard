@@ -25,9 +25,25 @@ class Pembelian_paket_model extends CI_Model
     // get data by id
     function get_by_id($id)
     {
-        $this->db->where($this->id, $id);
+    	$this->db->select("*");
+    	$this->db->select("pembelian_paket.bukti_pembayaran as bukti_pembayaran1");
+    	$this->db->select("pembelian_paket.status_pembayaran as status_pembayaran1");
+		$this->db->join('paket', 'pembelian_paket.id = paket.id', 'left')
+			->join('pembelian', 'pembelian_paket.pembelian_id_pembelian = pembelian.id_pembelian', 'left')
+			->join('users', 'pembelian.users_id = users_id', 'left')
+			->where('pembelian_paket.id_pembelian', $id);
         return $this->db->get($this->table)->row();
     }
+
+	// get data by id
+	function get_by_idd($id)
+	{
+		$this->db->where('pembelian_paket.id_pembelian', $id);
+//		return $this->db->get($this->table)->row();
+		return $this->db->get($this->table)->row();
+	}
+
+
     
     // get total rows
     function total_rows($q = NULL) {

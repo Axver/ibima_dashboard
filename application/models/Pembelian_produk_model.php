@@ -25,7 +25,9 @@ class Pembelian_produk_model extends CI_Model
     // get data by id
     function get_by_id($id)
     {
-
+		$this->db->select("*");
+		$this->db->select("pembelian_produk.bukti_pembayaran as bukti_pembayaran1");
+		$this->db->select("pembelian_produk.status_pembayaran as status_pembayaran1");
         $this->db->join('topik', 'pembelian_produk.id_produk = topik.id', 'left')
 			->join('pembelian', 'pembelian_produk.pembelian_id_pembelian = pembelian.id_pembelian', 'left')
 			->join('users', 'pembelian.users_id = users_id', 'left')

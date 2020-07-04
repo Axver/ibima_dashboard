@@ -100,14 +100,39 @@
 							<!-- Card Body -->
 							<div class="card-body">
 
-								<table class="table">
-									<tr><td>Id</td><td><?php echo $id; ?></td></tr>
-									<tr><td>List Email</td><td><?php echo $list_email; ?></td></tr>
-									<tr><td>Pembelian Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
-									<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
-									<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran; ?></td></tr>
-									<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran; ?></td></tr>
-									<tr><td></td><td><a href="<?php echo site_url('pembelian_paket') ?>" class="btn btn-default">Cancel</a></td></tr>
+								<div class="row">
+									<div class="col-sm-6">
+										<table class="table">
+											<tr><td>Nama Produk</td><td><?php echo $nama_paket; ?></td></tr>
+											<tr><td>Deskripsi</td><td><?php echo $deskripsi; ?></td></tr>
+											<tr><td>Harga</td><td><?php echo $harga; ?></td></tr>
+											<tr><td>Zoom</td><td><?php if($zoom==0)
+													{
+														echo "No";
+													}
+													else
+													{
+														echo "Yes";
+													}?></td></tr>
+											<tr><td>Id</td><td><?php echo $id; ?></td></tr>
+											<tr><td>List Email</td><td><?php echo $list_email; ?></td></tr>
+											<tr><td>Pembelian Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
+											<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
+											<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran1; ?></td></tr>
+											<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran1; ?></td></tr>
+											<tr><td></td><td><a href="<?php echo site_url('pembelian_paket') ?>" class="btn btn-default">Cancel</a></td></tr>
+
+										</table>
+									</div>
+									<div class="col-sm-6">
+										*URL Image Diganti Dengan URL Endpoint Laravel
+										<br/>
+										<img style="height:400px; src="<?php echo 'www.urllaravel.com/'.$bukti_pembayaran1 ?>" alt="Gambar Tidak Ada">
+									</div>
+								</div>
+							</div>
+
+
 
 
 							</div>

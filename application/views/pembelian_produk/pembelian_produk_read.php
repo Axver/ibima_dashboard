@@ -101,6 +101,8 @@
 							<div class="card-body">
 
 
+
+
 							<div class="row">
 								<div class="col-sm-6">
 									<table class="table">
@@ -119,8 +121,8 @@
 										<tr><td>Id Produk</td><td><?php echo $id_produk; ?></td></tr>
 										<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
 										<tr><td>Pembelian:Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
-										<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran; ?></td></tr>
-										<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran; ?></td></tr>
+										<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran1; ?></td></tr>
+										<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran1; ?></td></tr>
 										<tr><hr/></tr>
 										<tr><td>Nama User</td><td><?php echo $name; ?></td></tr>
 										<tr><td>Email User</td><td><?php echo $email; ?></td></tr>
@@ -132,7 +134,7 @@
 								<div class="col-sm-6">
 									*URL Image Diganti Dengan URL Endpoint Laravel
 									<br/>
-									<img style="height:400px; src="<?php echo 'www.urllaravel.com/'.$bukti_pembayaran ?>" alt="Gambar Tidak Ada">
+									<img style="height:400px; src="<?php echo 'www.urllaravel.com/'.$bukti_pembayaran1 ?>" alt="Gambar Tidak Ada">
 
 								</div>
 							</div>

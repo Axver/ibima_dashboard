@@ -60,7 +60,9 @@ class Pembelian_produk extends CI_Controller
 		'created_at' => $row->created_at,
 		'pembelian_id_pembelian' => $row->pembelian_id_pembelian,
 		'bukti_pembayaran' => $row->bukti_pembayaran,
+		'bukti_pembayaran1' => $row->bukti_pembayaran1,
 		'status_pembayaran' => $row->status_pembayaran,
+		'status_pembayaran1' => $row->status_pembayaran1,
 	    );
             $this->load->view('pembelian_produk/pembelian_produk_read', $data);
         } else {

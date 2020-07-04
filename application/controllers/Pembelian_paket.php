@@ -48,13 +48,21 @@ class Pembelian_paket extends CI_Controller
         $row = $this->Pembelian_paket_model->get_by_id($id);
         if ($row) {
             $data = array(
+				'nama_paket' => $row->nama_paket,
+				'name' => $row->name,
+				'email' => $row->email,
+				'deskripsi' => $row->deskripsi,
+				'harga' => $row->harga,
+				'zoom' => $row->zoom,
 		'id_pembelian' => $row->id_pembelian,
 		'id' => $row->id,
 		'list_email' => $row->list_email,
 		'pembelian_id_pembelian' => $row->pembelian_id_pembelian,
 		'created_at' => $row->created_at,
 		'bukti_pembayaran' => $row->bukti_pembayaran,
+		'bukti_pembayaran1' => $row->bukti_pembayaran1,
 		'status_pembayaran' => $row->status_pembayaran,
+		'status_pembayaran1' => $row->status_pembayaran1,
 	    );
             $this->load->view('pembelian_paket/pembelian_paket_read', $data);
         } else {
@@ -103,7 +111,7 @@ class Pembelian_paket extends CI_Controller
     
     public function update($id) 
     {
-        $row = $this->Pembelian_paket_model->get_by_id($id);
+        $row = $this->Pembelian_paket_model->get_by_idd($id);
 
         if ($row) {
             $data = array(

@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Pembelian_paket_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Pembelian_paket_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_read.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_read.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593819025269</updated>
-      <workItem from="1593819027541" duration="17199000" />
+      <workItem from="1593819027541" duration="19174000" />
     </task>
     <servers />
   </component>
