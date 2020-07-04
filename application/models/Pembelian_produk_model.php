@@ -25,9 +25,21 @@ class Pembelian_produk_model extends CI_Model
     // get data by id
     function get_by_id($id)
     {
-        $this->db->join('topik', 'pembelian_produk.id_produk = topik.id', 'left')->where($this->id, $id);
+
+        $this->db->join('topik', 'pembelian_produk.id_produk = topik.id', 'left')
+			->join('pembelian', 'pembelian_produk.pembelian_id_pembelian = pembelian.id_pembelian', 'left')
+			->join('users', 'pembelian.users_id = users_id', 'left')
+			->where('pembelian_produk.id_pembelian', $id);
         return $this->db->get($this->table)->row();
     }
+
+
+	function get_by_idd($id)
+	{
+
+		$this->db->where('pembelian_produk.id_pembelian', $id);
+		return $this->db->get($this->table)->row();
+	}
     
     // get total rows
     function total_rows($q = NULL) {

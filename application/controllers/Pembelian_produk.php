@@ -25,7 +25,7 @@ class Pembelian_produk extends CI_Controller
             $config['first_url'] = base_url() . 'pembelian_produk/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 10000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Pembelian_produk_model->total_rows($q);
         $pembelian_produk = $this->Pembelian_produk_model->get_limit_data($config['per_page'], $start, $q);
@@ -49,6 +49,8 @@ class Pembelian_produk extends CI_Controller
         if ($row) {
             $data = array(
 				'nama_topik' => $row->nama_topik,
+				'name' => $row->name,
+				'email' => $row->email,
 				'deskripsi' => $row->deskripsi_topik,
 				'thumbnail' => $row->thumbnail,
 				'harga' => $row->harga,
@@ -105,7 +107,12 @@ class Pembelian_produk extends CI_Controller
     
     public function update($id) 
     {
-        $row = $this->Pembelian_produk_model->get_by_id($id);
+
+//    	echo $id;
+
+
+        $row = $this->Pembelian_produk_model->get_by_idd($id);
+//        var_dump($row);
 
         if ($row) {
             $data = array(

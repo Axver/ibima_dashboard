@@ -134,6 +134,7 @@
 								<table class="table table-bordered" style="margin-bottom: 10px">
 									<tr>
 										<th>No</th>
+										<th>Id Pembelian</th>
 										<th>Id Produk</th>
 										<th>Created At</th>
 										<th>Pembelian Id Pembelian</th>
@@ -146,6 +147,8 @@
 										?>
 										<tr>
 											<td width="80px"><?php echo ++$start ?></td>
+
+											<td><?php echo $pembelian_produk->id_pembelian?></td>
 											<td><?php echo $pembelian_produk->id_produk ?></td>
 											<td><?php echo $pembelian_produk->created_at ?></td>
 											<td><?php echo $pembelian_produk->pembelian_id_pembelian ?></td>

@@ -118,9 +118,12 @@
 												}?></td></tr>
 										<tr><td>Id Produk</td><td><?php echo $id_produk; ?></td></tr>
 										<tr><td>Created At</td><td><?php echo $created_at; ?></td></tr>
-										<tr><td>Pembelian Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
+										<tr><td>Pembelian:Id Pembelian</td><td><?php echo $pembelian_id_pembelian; ?></td></tr>
 										<tr><td>Bukti Pembayaran</td><td><?php echo $bukti_pembayaran; ?></td></tr>
 										<tr><td>Status Pembayaran</td><td><?php echo $status_pembayaran; ?></td></tr>
+										<tr><hr/></tr>
+										<tr><td>Nama User</td><td><?php echo $name; ?></td></tr>
+										<tr><td>Email User</td><td><?php echo $email; ?></td></tr>
 
 										<tr><td></td><td><a href="<?php echo site_url('pembelian_produk') ?>" class="btn btn-default">Cancel</a></td></tr>
 									</table>
