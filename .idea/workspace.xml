@@ -3,10 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Quiz_session.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Quiz_session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/models/Quiz_session_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Quiz_session_model.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Downloadable.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Downloadable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Exclusive.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Exclusive.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Failed_jobs.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Failed_jobs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Image.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Image_paket.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Image_paket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Image_produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Image_produk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Image_triaining.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Image_triaining.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Migrations.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Migrations.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Modul.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Modul.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Paket.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Paket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Paket_max.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Paket_max.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Paket_topik.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Paket_topik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Password_resets.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Password_resets.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Profiles.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Profiles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Question.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Question_image.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Question_image.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Quiz.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Quiz.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Sertifikat.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Sertifikat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Topik.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Topik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/User_modul.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/User_modul.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/User_topik.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/User_topik.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Users.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Video.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +75,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593819025269</updated>
-      <workItem from="1593819027541" duration="23152000" />
+      <workItem from="1593819027541" duration="23425000" />
     </task>
     <servers />
   </component>

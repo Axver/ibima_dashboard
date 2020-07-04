@@ -25,7 +25,7 @@ class Question_image extends CI_Controller
             $config['first_url'] = base_url() . 'question_image/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Question_image_model->total_rows($q);
         $question_image = $this->Question_image_model->get_limit_data($config['per_page'], $start, $q);

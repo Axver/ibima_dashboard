@@ -25,7 +25,7 @@ class Password_resets extends CI_Controller
             $config['first_url'] = base_url() . 'password_resets/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Password_resets_model->total_rows($q);
         $password_resets = $this->Password_resets_model->get_limit_data($config['per_page'], $start, $q);

@@ -25,7 +25,7 @@ class Paket_topik extends CI_Controller
             $config['first_url'] = base_url() . 'paket_topik/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Paket_topik_model->total_rows($q);
         $paket_topik = $this->Paket_topik_model->get_limit_data($config['per_page'], $start, $q);

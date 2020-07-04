@@ -25,7 +25,7 @@ class Failed_jobs extends CI_Controller
             $config['first_url'] = base_url() . 'failed_jobs/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Failed_jobs_model->total_rows($q);
         $failed_jobs = $this->Failed_jobs_model->get_limit_data($config['per_page'], $start, $q);

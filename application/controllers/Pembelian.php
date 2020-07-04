@@ -25,7 +25,7 @@ class Pembelian extends CI_Controller
             $config['first_url'] = base_url() . 'pembelian/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Pembelian_model->total_rows($q);
         $pembelian = $this->Pembelian_model->get_limit_data($config['per_page'], $start, $q);

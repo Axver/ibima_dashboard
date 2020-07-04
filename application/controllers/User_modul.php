@@ -25,7 +25,7 @@ class User_modul extends CI_Controller
             $config['first_url'] = base_url() . 'user_modul/index.html';
         }
 
-        $config['per_page'] = 10;
+        $config['per_page'] = 100000000;
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->User_modul_model->total_rows($q);
         $user_modul = $this->User_modul_model->get_limit_data($config['per_page'], $start, $q);
