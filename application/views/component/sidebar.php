@@ -69,10 +69,28 @@
 		</a>
 		<div id="collapseTwo121" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
 			<div class="bg-white py-2 collapse-inner rounded">
-				<h6 class="collapse-header">Setting</h6>
+				<h6 class="collapse-header">Menu Pembelian & Konfirmasi</h6>
 <!--				<a class="collapse-item" href="--><?php //echo base_url('pembelian') ?><!--">Pembelian</a>-->
 				<a class="collapse-item" href="<?php echo base_url('pembelian_produk') ?>">Pembelian Produk</a>
 				<a class="collapse-item" href="<?php echo base_url('pembelian_paket') ?>">Pembelian Paket</a>
+
+
+
+			</div>
+		</div>
+	</li>
+
+	<li class="nav-item">
+		<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo121x" aria-expanded="true" aria-controls="collapseTwo">
+			<i class="fas fa-fw fa-money-bill"></i>
+			<span>Ruangan</span>
+		</a>
+		<div id="collapseTwo121x" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+			<div class="bg-white py-2 collapse-inner rounded">
+				<h6 class="collapse-header">Daftar Ruangan</h6>
+				<!--				<a class="collapse-item" href="--><?php //echo base_url('pembelian') ?><!--">Pembelian</a>-->
+				<a class="collapse-item" href="<?php echo base_url('ruangan') ?>">Daftar Ruangan</a>
+
 
 
 

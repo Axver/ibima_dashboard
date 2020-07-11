@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/image_paket/image_paket_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/image_paket/image_paket_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/component/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/component/sidebar.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -51,7 +52,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593819025269</updated>
-      <workItem from="1593819027541" duration="26002000" />
+      <workItem from="1593819027541" duration="26647000" />
+      <workItem from="1594438373029" duration="1967000" />
     </task>
     <servers />
   </component>
@@ -66,7 +68,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
