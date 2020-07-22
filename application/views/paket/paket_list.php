@@ -130,7 +130,8 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Nama Paket</th>
@@ -139,7 +140,8 @@
 										<th>Zoom</th>
 										<th>Max User</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($paket_data as $paket)
 									{
 										?>

@@ -131,7 +131,8 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Id Pembelian</th>
@@ -141,7 +142,8 @@
 										<th>Bukti Pembayaran</th>
 										<th>Status Pembayaran</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($pembelian_produk_data as $pembelian_produk)
 									{
 										?>

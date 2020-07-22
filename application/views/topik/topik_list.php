@@ -130,7 +130,8 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Nama Topik</th>
@@ -139,7 +140,8 @@
 										<th>Harga</th>
 										<th>Zoom</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($topik_data as $topik)
 									{
 										?>

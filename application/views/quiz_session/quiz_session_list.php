@@ -131,7 +131,8 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Starting Time</th>
@@ -142,7 +143,8 @@
 										<th>Quiz Id</th>
 										<th>Certificate</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($quiz_session_data as $quiz_session)
 									{
 										?>

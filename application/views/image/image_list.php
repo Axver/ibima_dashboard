@@ -130,12 +130,14 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Name</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($image_data as $image)
 									{
 										?>

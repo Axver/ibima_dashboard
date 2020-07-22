@@ -131,7 +131,8 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-bordered" style="margin-bottom: 10px">
+								<table id="example" class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
 									<tr>
 										<th>No</th>
 										<th>Quiz Id</th>
@@ -139,7 +140,8 @@
 										<th>Option</th>
 										<th>Answer</th>
 										<th>Action</th>
-									</tr><?php
+									</tr>
+									</thead><?php
 									foreach ($question_data as $question)
 									{
 										?>
