@@ -3,23 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_produk.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Image_produk_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Image_produk_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Pembelian_produk_model.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/component/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/component/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/downloadable/downloadable_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/downloadable/downloadable_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/exclusive/exclusive_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/exclusive/exclusive_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/image/image_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/image/image_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/image_paket/image_paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/image_paket/image_paket_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/modul/modul_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/modul/modul_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/paket/paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/paket/paket_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/question/question_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/question/question_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/question_image/question_image_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/question_image/question_image_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/quiz/quiz_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz/quiz_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/quiz_session/quiz_session_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/ruangan/ruangan_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/ruangan/ruangan_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/topik/topik_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/topik/topik_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/user_modul/user_modul_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/user_modul/user_modul_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/users/users_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/users/users_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +58,7 @@
       <workItem from="1593819027541" duration="26647000" />
       <workItem from="1594438373029" duration="2568000" />
       <workItem from="1594470574643" duration="33000" />
-      <workItem from="1595388944438" duration="1214000" />
+      <workItem from="1595388944438" duration="2876000" />
     </task>
     <servers />
   </component>
@@ -92,5 +80,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php</url>
+          <line>108</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

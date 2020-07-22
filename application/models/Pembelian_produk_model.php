@@ -67,6 +67,10 @@ class Pembelian_produk_model extends CI_Model
 	$this->db->limit($limit, $start);
         return $this->db->get($this->table)->result();
     }
+    function get_limit_data1() {
+		;
+        return $this->db->get_where('pembelian_produk', array('status_pembayaran' => 'no'))->result();
+    }
 
     // insert data
     function insert($data)

@@ -48,6 +48,8 @@ class Image_produk_model extends CI_Model
         return $this->db->get($this->table)->result();
     }
 
+
+
     // insert data
     function insert($data)
     {
