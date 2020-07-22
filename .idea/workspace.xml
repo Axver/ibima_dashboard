@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_produk/pembelian_produk_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Pembelian_paket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/models/Pembelian_paket_model.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/models/Pembelian_paket_model.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/pembelian_paket/pembelian_paket_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +56,7 @@
       <workItem from="1593819027541" duration="26647000" />
       <workItem from="1594438373029" duration="2568000" />
       <workItem from="1594470574643" duration="33000" />
-      <workItem from="1595388944438" duration="5404000" />
+      <workItem from="1595388944438" duration="6292000" />
     </task>
     <servers />
   </component>

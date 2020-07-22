@@ -72,6 +72,16 @@ class Pembelian_paket_model extends CI_Model
         return $this->db->get($this->table)->result();
     }
 
+	function get_limit_data1() {
+		;
+		return $this->db->get_where('pembelian_paket', array('status_pembayaran' => 'no'))->result();
+	}
+
+	function get_limit_data2() {
+		;
+		return $this->db->query("SELECT * FROM pembelian_paket WHERE date(created_at)= CURDATE()")->result();
+	}
+
     // insert data
     function insert($data)
     {

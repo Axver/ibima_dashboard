@@ -29,12 +29,16 @@ class Pembelian_paket extends CI_Controller
         $config['page_query_string'] = TRUE;
         $config['total_rows'] = $this->Pembelian_paket_model->total_rows($q);
         $pembelian_paket = $this->Pembelian_paket_model->get_limit_data($config['per_page'], $start, $q);
+        $pembelian_paket1 = $this->Pembelian_paket_model->get_limit_data1();
+        $pembelian_paket2 = $this->Pembelian_paket_model->get_limit_data2();
 
         $this->load->library('pagination');
         $this->pagination->initialize($config);
 
         $data = array(
             'pembelian_paket_data' => $pembelian_paket,
+            'pembelian_paket_data1' => $pembelian_paket1,
+            'pembelian_paket_data2' => $pembelian_paket2,
             'q' => $q,
             'pagination' => $this->pagination->create_links(),
             'total_rows' => $config['total_rows'],
