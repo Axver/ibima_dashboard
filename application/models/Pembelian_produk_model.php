@@ -72,6 +72,13 @@ class Pembelian_produk_model extends CI_Model
         return $this->db->get_where('pembelian_produk', array('status_pembayaran' => 'no'))->result();
     }
 
+	function get_limit_data2() {
+		;
+		return $this->db->query("SELECT * FROM pembelian_produk WHERE date(created_at)= CURDATE()")->result();
+	}
+
+
+
     // insert data
     function insert($data)
     {

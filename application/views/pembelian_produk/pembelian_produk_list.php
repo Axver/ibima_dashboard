@@ -91,8 +91,8 @@
 					<div class="col-xl-12 col-lg-12">
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
-							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Daftar Pembelian Produk</h6>
+							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: #4066D5; color:white">
+								<h6>Daftar Pembelian Produk</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -195,8 +195,8 @@
 					<div class="col-xl-12 col-lg-12">
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
-							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Belum Di Konfirmasi</h6>
+							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: red; color:white;">
+								<h6 >Belum Di Konfirmasi</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -279,12 +279,108 @@
 									?>
 								</table>
 								<div class="row">
-									<div class="col-md-6">
-										<a href="#" class="btn btn-primary">Total Record : <?php echo $total_rows ?></a>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<div class="row" >
+
+					<!-- Area Chart -->
+					<div class="col-xl-12 col-lg-12">
+						<div class="card shadow mb-12">
+							<!-- Card Header - Dropdown -->
+							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between" style="background-color: green;color:white;">
+								<h6  >Pembelian Hari Ini</h6>
+								<div class="dropdown no-arrow">
+									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+									</a>
+
+								</div>
+							</div>
+							<!-- Card Body -->
+							<div class="card-body">
+
+
+								<div class="row" style="margin-bottom: 10px">
+									<div class="col-md-4">
+										<!--										--><?php //echo anchor(site_url('pembelian_produk/create'),'Create', 'class="btn btn-primary"'); ?>
 									</div>
-									<div class="col-md-6 text-right">
-										<?php echo $pagination ?>
+									<div class="col-md-4 text-center">
+										<div style="margin-top: 8px" id="message">
+											<?php echo $this->session->userdata('message') <> '' ? $this->session->userdata('message') : ''; ?>
+										</div>
 									</div>
+									<div class="col-md-1 text-right">
+									</div>
+									<div class="col-md-3 text-right">
+										<form action="<?php echo site_url('pembelian_produk/index'); ?>" class="form-inline" method="get">
+											<div class="input-group">
+												<input type="text" class="form-control" name="q" value="<?php echo $q; ?>">
+												<span class="input-group-btn">
+                            <?php
+							if ($q <> '')
+							{
+								?>
+								<a href="<?php echo site_url('pembelian_produk'); ?>" class="btn btn-default">Reset</a>
+								<?php
+							}
+							?>
+                          <button class="btn btn-primary" type="submit">Search</button>
+                        </span>
+											</div>
+										</form>
+									</div>
+								</div>
+								<table class="table table-striped table-bordered" style="margin-bottom: 10px">
+									<thead>
+									<tr>
+										<th>No</th>
+										<th>Id Pembelian</th>
+										<th>Id Produk</th>
+										<th>Created At</th>
+										<th>Pembelian Id Pembelian</th>
+										<th>Bukti Pembayaran</th>
+										<th>Status Pembayaran</th>
+										<th>Action</th>
+									</tr>
+									</thead><?php
+									$start=0;
+									foreach ($pembelian_produk_data2 as $pembelian_produk)
+									{
+										?>
+										<tr>
+											<td width="80px"><?php echo ++$start ?></td>
+
+											<td><?php echo $pembelian_produk->id_pembelian?></td>
+											<td><?php echo $pembelian_produk->id_produk ?></td>
+											<td><?php echo $pembelian_produk->created_at ?></td>
+											<td><?php echo $pembelian_produk->pembelian_id_pembelian ?></td>
+											<td><?php echo $pembelian_produk->bukti_pembayaran ?></td>
+											<td><?php echo $pembelian_produk->status_pembayaran ?></td>
+											<td style="text-align:center" width="200px">
+												<?php
+												echo anchor(site_url('pembelian_produk/read/'.$pembelian_produk->id_pembelian),'Read');
+												echo ' | ';
+												echo anchor(site_url('pembelian_produk/update/'.$pembelian_produk->id_pembelian),'Update');
+												echo ' | ';
+												echo anchor(site_url('pembelian_produk/delete/'.$pembelian_produk->id_pembelian),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
+												?>
+											</td>
+										</tr>
+										<?php
+									}
+									?>
+								</table>
+								<div class="row">
+
 								</div>
 
 							</div>

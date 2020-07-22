@@ -30,6 +30,7 @@ class Pembelian_produk extends CI_Controller
         $config['total_rows'] = $this->Pembelian_produk_model->total_rows($q);
         $pembelian_produk = $this->Pembelian_produk_model->get_limit_data($config['per_page'], $start, $q);
         $pembelian_produk1 = $this->Pembelian_produk_model->get_limit_data1();
+        $pembelian_produk2 = $this->Pembelian_produk_model->get_limit_data2();
 
         $this->load->library('pagination');
         $this->pagination->initialize($config);
@@ -37,6 +38,7 @@ class Pembelian_produk extends CI_Controller
         $data = array(
             'pembelian_produk_data' => $pembelian_produk,
             'pembelian_produk_data1' => $pembelian_produk1,
+            'pembelian_produk_data2' => $pembelian_produk2,
             'q' => $q,
             'pagination' => $this->pagination->create_links(),
             'total_rows' => $config['total_rows'],
