@@ -343,10 +343,11 @@
 								<table  id="today" class="table table-striped table-bordered" style="margin-bottom: 10px">
 									<thead>
 									<tr>
-										<th>No</th>
+
 										<th>Id Pembelian</th>
-										<th>Id Produk</th>
-									s
+
+
+
 										<th>Bukti Pembayaran</th>
 										<th>Status Pembayaran</th>
 										<th>Action</th>
@@ -357,10 +358,10 @@
 									{
 										?>
 										<tr>
-											<td width="80px"><?php echo ++$start ?></td>
+
 
 											<td><?php echo $pembelian_produk->id_pembelian?></td>
-											<td><?php echo $pembelian_produk->id_produk ?></td>
+
 
 
 											<td><?php echo $pembelian_produk->bukti_pembayaran ?></td>
@@ -456,11 +457,11 @@
         name=name+".pdf";
         var element = document.getElementById('today');
         var opt = {
-            margin:       1,
+            margin:       0.7,
             filename:     name,
             image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 2 },
-            jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
         };
 
 // New Promise-based usage:
