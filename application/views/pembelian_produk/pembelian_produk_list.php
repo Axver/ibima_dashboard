@@ -301,6 +301,7 @@
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+										<button class="btn btn-info" onclick="printToday()">Print</button>
 									</a>
 
 								</div>
@@ -339,14 +340,13 @@
 										</form>
 									</div>
 								</div>
-								<table class="table table-striped table-bordered" style="margin-bottom: 10px">
+								<table  id="today" class="table table-striped table-bordered" style="margin-bottom: 10px">
 									<thead>
 									<tr>
 										<th>No</th>
 										<th>Id Pembelian</th>
 										<th>Id Produk</th>
-										<th>Created At</th>
-										<th>Pembelian Id Pembelian</th>
+									s
 										<th>Bukti Pembayaran</th>
 										<th>Status Pembayaran</th>
 										<th>Action</th>
@@ -361,8 +361,8 @@
 
 											<td><?php echo $pembelian_produk->id_pembelian?></td>
 											<td><?php echo $pembelian_produk->id_produk ?></td>
-											<td><?php echo $pembelian_produk->created_at ?></td>
-											<td><?php echo $pembelian_produk->pembelian_id_pembelian ?></td>
+
+
 											<td><?php echo $pembelian_produk->bukti_pembayaran ?></td>
 											<td><?php echo $pembelian_produk->status_pembayaran ?></td>
 											<td style="text-align:center" width="200px">
@@ -438,7 +438,38 @@
 	</div>
 </div>
 
+<script>
 
+    function makeid(length) {
+        var result           = '';
+        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for ( var i = 0; i < length; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
+
+	function printToday() {
+
+        let name=makeid(10);
+        name=name+".pdf";
+        var element = document.getElementById('today');
+        var opt = {
+            margin:       1,
+            filename:     name,
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'in', format: 'letter', orientation: 'landscape' }
+        };
+
+// New Promise-based usage:
+        html2pdf().set(opt).from(element).save();
+
+
+
+    }
+</script>
 
 
 
