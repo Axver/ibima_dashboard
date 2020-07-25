@@ -181,6 +181,116 @@
 
 				</div>
 
+				<br/>
+
+				<div class="row">
+
+					<!-- Area Chart -->
+					<div class="col-xl-12 col-lg-12">
+						<div class="card shadow mb-12">
+							<!-- Card Header - Dropdown -->
+							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+								<h6 class="m-0 font-weight-bold text-primary">Tambahkan Ruangan User (Topik)</h6>
+								<div class="dropdown no-arrow">
+									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+									</a>
+
+								</div>
+							</div>
+							<!-- Card Body -->
+							<div class="card-body">
+
+
+								<div class="row" style="margin-bottom: 10px">
+
+									<div class="col-md-4 text-center">
+
+									</div>
+									<div class="col-md-1 text-right">
+									</div>
+									<div class="col-md-3 text-right">
+
+									</div>
+								</div>
+
+								<label>Informasi Pembelian</label>
+								<input type="hidden" id="base_url" value="<?php  echo base_url()?>">
+							     <select id="pembeli" class="form form-control js-example-basic-single">
+
+									 <?php
+									 foreach ($ruangan_data1 as $ruangan)
+									 {
+										 ?>
+
+
+											 <option value="<?php echo $ruangan->id_pembelian ?>"><?php echo $ruangan->id_pembelian ?>_<?php echo $ruangan->name ?>_<?php echo $ruangan->email ?></option>
+
+
+
+										 <?php
+									 }
+									 ?>
+								 </select>
+
+								<br/>
+								<label>Informasi Ruangan</label>
+
+								<select id="ruangan" class="form form-control js-example-basic-single">
+
+									<?php
+									foreach ($ruangan_data2 as $ruangan)
+									{
+										?>
+
+
+										<option value="<?php echo $ruangan->idruangan ?>"><?php echo $ruangan->nama_ruangan ?>_<?php echo $ruangan->link_zoom ?>_<?php echo $ruangan->informasi ?></option>
+
+
+
+										<?php
+									}
+									?>
+								</select>
+								<br/>
+								<br/>
+
+								<button onclick="saveRuangan()" class="btn btn-info">Save</button>
+
+								<script>
+									$(document).ready(function() {
+                                        $('.js-example-basic-single').select2();
+                                    });
+								function saveRuangan()
+								{
+								    let pembeli=$("#pembeli").val();
+								    let ruangan=$("#ruangan").val();
+								    let base_url=$("#base_url").val();
+
+								    $.ajax({
+                                    type: "POST",
+                                    url: base_url+"ruangan/save",
+                                    data: {"pembeli":pembeli,"ruangan":ruangan},
+                                    dataType: "text",
+                                    cache:false,
+                                    success:
+                                        function(data){
+                                            alert(data);  //as a debugging message.
+                                        }
+                                });
+								}
+								</script>
+								<div class="row">
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
 
 
 			</div>

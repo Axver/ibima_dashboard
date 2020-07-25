@@ -54,6 +54,17 @@ class Ruangan_model extends CI_Model
         return $this->db->get($this->table)->result();
     }
 
+	function get_limit_data1() {
+
+		return $this->db->query("SELECT pembelian_produk.id_pembelian as id_pembelian ,users.name as name, users.email as email FROM pembelian_produk LEFT JOIN pembelian ON pembelian_produk.pembelian_id_pembelian=pembelian.id_pembelian
+LEFT JOIN users ON pembelian.users_id=users.id")->result();
+	}
+
+	function get_limit_data2() {
+
+		return $this->db->query("SELECT * FROM ruangan")->result();
+	}
+
     // insert data
     function insert($data)
     {
