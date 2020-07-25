@@ -15,7 +15,7 @@
 <div id="wrapper">
 
 	<!-- Sidebar -->
-	<?php $this->load->view('component/sidebar'); ?>
+
 	<!-- End of Sidebar -->
 
 	<!-- Content Wrapper -->
@@ -82,7 +82,11 @@
 
 				<!-- Content Row -->
 
-				<div class="row">
+				<button class="btn btn-info" onclick="printToday()">Print</button>
+				<br/>
+				<br/>
+
+				<div class="row" id="cetak">
 
 					<!-- Area Chart -->
 					<div class="col-xl-12 col-lg-12">
@@ -101,26 +105,92 @@
 							<div class="card-body">
 
 
-								<table class="table">
-									<tr><td>Nama Ruangan</td><td><?php echo $nama_ruangan; ?></td></tr>
-									<tr><td>Link Zoom</td><td><?php echo $link_zoom; ?></td></tr>
-									<tr><td>Informasi</td><td><?php echo $informasi; ?></td></tr>
-									<tr><td>Topik Id</td><td><?php echo $topik_id; ?></td></tr>
-									<tr><td>Nama Topik</td><td><?php echo $nama_topik; ?></td></tr>
-									<tr><td></td><td><a href="<?php echo site_url('ruangan') ?>" class="btn btn-default">Cancel</a></td></tr>
+Produk:
+								<table class="table table-bordered" style="width:100%">
+									<th>Nama User</th>
+									<th>Email</th>
+									<th>Id Pembelian</th>
+									<th>Status Pembayaran</th>
+
+
+									<?php
+									foreach ($produk as $ruangan)
+									{
+										?>
+
+
+										<tr>
+											<td><?php echo $ruangan->name ?></td>
+											<td><?php echo $ruangan->email ?></td>
+											<td><?php echo $ruangan->id_pembelian ?></td>
+											<td><?php echo $ruangan->status_pembayaran ?></td>
+
+										</tr>
+
+
+										<?php
+									}
+									?>
 								</table>
 
-								<input type="hidden" id="id_ruangan" value="<?php echo $idruangan; ?>">
-								<input type="hidden" id="base_url" value="<?php echo base_url(); ?>">
+								Paket:
+								<table class="table table-bordered" style="width:100%">
+									<th>Nama User</th>
+									<th>Email</th>
+									<th>Id Pembelian</th>
+									<th>Status Pembayaran</th>
 
-								<button onclick="printPeserta()" class="btn btn-info">Print Daftar Peserta</button>
-								
+
+									<?php
+									foreach ($paket as $ruangan)
+									{
+										?>
+
+
+										<tr>
+											<td><?php echo $ruangan->name ?></td>
+											<td><?php echo $ruangan->email ?></td>
+											<td><?php echo $ruangan->id_pembelian ?></td>
+											<td><?php echo $ruangan->status_pembayaran ?></td>
+
+										</tr>
+
+
+										<?php
+									}
+									?>
+								</table>
+
 								<script>
-									function printPeserta() {
-										let base_url=$("#base_url").val();
-										let id_ruangan=$("#id_ruangan").val();
 
-										window.location.href=base_url+"/ruangan/print/"+id_ruangan;
+                                    function printToday() {
+
+                                        let name=makeid(10);
+                                        name=name+".pdf";
+                                        var element = document.getElementById('cetak');
+                                        var opt = {
+                                            margin:       0.7,
+                                            filename:     name,
+                                            image:        { type: 'jpeg', quality: 0.98 },
+                                            html2canvas:  { scale: 2 },
+                                            jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+                                        };
+
+// New Promise-based usage:
+                                        html2pdf().set(opt).from(element).save();
+
+
+
+                                    }
+
+                                    function makeid(length) {
+                                        var result           = '';
+                                        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                                        var charactersLength = characters.length;
+                                        for ( var i = 0; i < length; i++ ) {
+                                            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+                                        }
+                                        return result;
                                     }
 								</script>
 

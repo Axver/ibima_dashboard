@@ -109,6 +109,26 @@ class Ruangan extends CI_Controller
         }
     }
 
+	public function print($id)
+	{
+
+
+		$data1=$this->db->query("SELECT * FROM pembelian_produk LEFT JOIN pembelian ON pembelian_produk.pembelian_id_pembelian=pembelian.id_pembelian
+ LEFT JOIN users ON pembelian.users_id=users.id
+ WHERE idruangan=$id")->result();
+		$data2=$this->db->query("SELECT * FROM pembelian_paket 
+LEFT JOIN pembelian ON pembelian_paket.pembelian_id_pembelian=pembelian.id_pembelian
+ LEFT JOIN users ON pembelian.users_id=users.id
+WHERE idruangan=$id")->result();
+
+		$data = array(
+			'produk' => $data1,
+			'paket' => $data2,
+
+		);
+		$this->load->view('ruangan/ruangan_print', $data);
+	}
+
     public function create() 
     {
         $data = array(
