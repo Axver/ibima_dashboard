@@ -65,6 +65,12 @@ LEFT JOIN users ON pembelian.users_id=users.id")->result();
 		return $this->db->query("SELECT * FROM ruangan")->result();
 	}
 
+	function get_limit_data3() {
+
+		return $this->db->query("SELECT pembelian_paket.id_pembelian as id_pembelian ,users.name as name, users.email as email FROM pembelian_paket LEFT JOIN pembelian ON pembelian_paket.pembelian_id_pembelian=pembelian.id_pembelian
+LEFT JOIN users ON pembelian.users_id=users.id")->result();
+	}
+
     // insert data
     function insert($data)
     {

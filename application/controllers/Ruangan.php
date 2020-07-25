@@ -16,11 +16,32 @@ class Ruangan extends CI_Controller
 	{
 		$pembeli=$_POST['pembeli'];
 		$ruangan=$_POST['ruangan'];
-	
+
 
 //		Update Data
 
 		$data=$this->db->query("UPDATE pembelian_produk SET idruangan=$ruangan WHERE id_pembelian='$pembeli'");
+
+		if($data)
+		{
+			echo "Berhasil Ditambahkan";
+		}
+		else
+		{
+			echo "Transaksi Gagal";
+		}
+	}
+
+
+	public function save1()
+	{
+		$pembeli=$_POST['pembeli'];
+		$ruangan=$_POST['ruangan'];
+
+
+//		Update Data
+
+		$data=$this->db->query("UPDATE pembelian_paket SET idruangan=$ruangan WHERE id_pembelian='$pembeli'");
 
 		if($data)
 		{
@@ -51,6 +72,7 @@ class Ruangan extends CI_Controller
         $ruangan = $this->Ruangan_model->get_limit_data($config['per_page'], $start, $q);
         $ruangan1 = $this->Ruangan_model->get_limit_data1();
         $ruangan2 = $this->Ruangan_model->get_limit_data2();
+        $ruangan3 = $this->Ruangan_model->get_limit_data3();
 
         $this->load->library('pagination');
         $this->pagination->initialize($config);
@@ -59,6 +81,7 @@ class Ruangan extends CI_Controller
             'ruangan_data' => $ruangan,
             'ruangan_data1' => $ruangan1,
             'ruangan_data2' => $ruangan2,
+            'ruangan_data3' => $ruangan3,
             'q' => $q,
             'pagination' => $this->pagination->create_links(),
             'total_rows' => $config['total_rows'],
