@@ -168,9 +168,7 @@
 
 				</div>
 
-<br/>
-<br/>
-<br/>
+
 
 				<div class="row">
 
@@ -179,7 +177,7 @@
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
 							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Transaksi Mingguan (Produk)</h6>
+								<h6 class="m-0 font-weight-bold text-primary">Transaksi Mingguan (Paket)</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -211,7 +209,7 @@
                                                     data: {
                                                         labels: ['Days 1', 'Days 2', 'Days 3', 'Days 4', 'Days 5', 'Days 6','Days 7'],
                                                         datasets: [{
-                                                            label: 'Pembelian Produk Perminggu',
+                                                            label: 'Pembelian Paket Perminggu',
                                                             data: data,
                                                             backgroundColor: [
                                                                 'rgba(255, 99, 132, 0.2)',
