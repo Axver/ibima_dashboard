@@ -146,8 +146,7 @@
 											<td style="text-align:center" width="200px">
 												<?php
 												echo anchor(site_url('image_paket/read/'.$image_paket->id),'Read');
-												echo ' | ';
-												echo anchor(site_url('image_paket/update/'.$image_paket->id),'Update');
+
 												echo ' | ';
 												echo anchor(site_url('image_paket/delete/'.$image_paket->id),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>

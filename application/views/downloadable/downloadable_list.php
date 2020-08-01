@@ -150,8 +150,7 @@
 											<td style="text-align:center" width="200px">
 												<?php
 												echo anchor(site_url('downloadable/read/'.$downloadable->id),'Read');
-												echo ' | ';
-												echo anchor(site_url('downloadable/update/'.$downloadable->id),'Update');
+
 												echo ' | ';
 												echo anchor(site_url('downloadable/delete/'.$downloadable->id),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>

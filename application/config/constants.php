@@ -1,6 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
+global $url_laravel;
+
+$url_laravel="127.0.0.1:8000/api/v1/";
+
 /*
 |--------------------------------------------------------------------------
 | Display Debug backtrace

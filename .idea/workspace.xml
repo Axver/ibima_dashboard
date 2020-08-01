@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63805058-3759-4880-812b-47e4c792c71f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/application/views/ruangan/ruangan_print.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/controllers/Ruangan.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/controllers/Ruangan.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/views/ruangan/ruangan_read.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/ruangan/ruangan_read.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/config/constants.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/config/constants.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/component/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/component/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/downloadable/downloadable_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/downloadable/downloadable_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/downloadable/downloadable_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/downloadable/downloadable_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/exclusive/exclusive_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/exclusive/exclusive_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/exclusive/exclusive_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/exclusive/exclusive_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/image_paket/image_paket_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/image_paket/image_paket_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/image_paket/image_paket_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/image_paket/image_paket_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/question_image/question_image_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/question_image/question_image_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/views/question_image/question_image_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/views/question_image/question_image_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +65,8 @@
       <workItem from="1594470574643" duration="33000" />
       <workItem from="1595388944438" duration="6447000" />
       <workItem from="1595648988677" duration="3923000" />
+      <workItem from="1595763602163" duration="30000" />
+      <workItem from="1596272766152" duration="1206000" />
     </task>
     <servers />
   </component>

@@ -101,18 +101,15 @@
 							<div class="card-body">
 
 
-								<form action="<?php echo $action; ?>" method="post">
+
+								<form action="http://127.0.0.1:8000/api/v1/exclusive" method="post" enctype="multipart/form-data">
 									<div class="form-group">
-										<label for="varchar">File Modul <?php echo form_error('file_modul') ?></label>
-										<input type="text" class="form-control" name="file_modul" id="file_modul" placeholder="File Modul" value="<?php echo $file_modul; ?>" />
+										<label for="varchar">Name <?php echo form_error('name') ?></label>
+										<input type="file" class="form-control" name="downloadable" id="downloadable" placeholder="Name" />
 									</div>
-									<div class="form-group">
-										<label for="int">Id Modul <?php echo form_error('id_modul') ?></label>
-										<input type="text" class="form-control" name="id_modul" id="id_modul" placeholder="Id Modul" value="<?php echo $id_modul; ?>" />
-									</div>
-									<input type="hidden" name="id" value="<?php echo $id; ?>" />
+
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
-									<a href="<?php echo site_url('exclusive') ?>" class="btn btn-default">Cancel</a>
+									<a href="<?php echo site_url('image') ?>" class="btn btn-default">Cancel</a>
 								</form>
 
 							</div>

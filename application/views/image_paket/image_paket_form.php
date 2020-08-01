@@ -100,14 +100,14 @@
 							<!-- Card Body -->
 							<div class="card-body">
 
-
-								<form action="<?php echo $action; ?>" method="post">
-									<input type="hidden" name="id" value="<?php echo $id; ?>" />
-									<select name="image" id="image">
-
-									</select>
+								<form action="http://127.0.0.1:8000/api/v1/image/paket" method="post" enctype="multipart/form-data">
+									<div class="form-group">
+										<label for="varchar">Name <?php echo form_error('name') ?></label>
+										<input type="file" class="form-control" name="image" id="imge" placeholder="Name" />
+									</div>
+									<input type="hidden" name="image" value="<?php echo $image; ?>" />
 									<button type="submit" class="btn btn-primary"><?php echo $button ?></button>
-									<a href="<?php echo site_url('image_paket') ?>" class="btn btn-default">Cancel</a>
+									<a href="<?php echo site_url('image') ?>" class="btn btn-default">Cancel</a>
 								</form>
 
 							</div>
