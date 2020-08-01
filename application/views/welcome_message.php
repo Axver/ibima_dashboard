@@ -89,7 +89,7 @@
 						<div class="card shadow mb-12">
 							<!-- Card Header - Dropdown -->
 							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-								<h6 class="m-0 font-weight-bold text-primary">Welcome Admin</h6>
+								<h6 class="m-0 font-weight-bold text-primary">Transaksi Mingguan (Paket)</h6>
 								<div class="dropdown no-arrow">
 									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
@@ -97,10 +97,159 @@
 
 								</div>
 							</div>
+
+							<input type="hidden" id="base" value="<?php echo base_url(); ?>">
 							<!-- Card Body -->
 							<div class="card-body">
+								<canvas id="myChart"  height="100"></canvas>
+								<script>
+
+									let base=$("#base").val();
+                                    $.ajax({
+                                        type: "GET",
+                                        async:false,
+                                        url: base+"/pembelian_paket/transaksi",
+                                        data: {"data":"data"},
+                                        dataType: "text",
+                                        cache:false,
+                                        success:
+                                            function(data){
+                                                data=JSON.parse(data);
+                                                var ctx = document.getElementById('myChart');
+                                                var myChart = new Chart(ctx, {
+                                                    type: 'line',
+                                                    data: {
+                                                        labels: ['Days 1', 'Days 2', 'Days 3', 'Days 4', 'Days 5', 'Days 6','Days 7'],
+                                                        datasets: [{
+                                                            label: 'Pembelian Paket Perminggu',
+                                                            data: data,
+                                                            backgroundColor: [
+                                                                'rgba(255, 99, 132, 0.2)',
+                                                                'rgba(54, 162, 235, 0.2)',
+                                                                'rgba(255, 206, 86, 0.2)',
+                                                                'rgba(75, 192, 192, 0.2)',
+                                                                'rgba(153, 102, 255, 0.2)',
+                                                                'rgba(255, 159, 64, 0.2)',
+                                                                'rgba(255, 159, 64, 0.2)'
+                                                            ],
+                                                            borderColor: [
+                                                                'rgba(255, 99, 132, 1)',
+                                                                'rgba(54, 162, 235, 1)',
+                                                                'rgba(255, 206, 86, 1)',
+                                                                'rgba(75, 192, 192, 1)',
+                                                                'rgba(153, 102, 255, 1)',
+                                                                'rgba(255, 159, 64, 1)',
+                                                                'rgba(255, 159, 64, 1)'
+                                                            ],
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                });
+
+                                            }
+                                    });
 
 
+								</script>
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+
+<br/>
+<br/>
+<br/>
+
+				<div class="row">
+
+					<!-- Area Chart -->
+					<div class="col-xl-12 col-lg-12">
+						<div class="card shadow mb-12">
+							<!-- Card Header - Dropdown -->
+							<div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+								<h6 class="m-0 font-weight-bold text-primary">Transaksi Mingguan (Produk)</h6>
+								<div class="dropdown no-arrow">
+									<a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+									</a>
+
+								</div>
+							</div>
+
+							<input type="hidden" id="base" value="<?php echo base_url(); ?>">
+							<!-- Card Body -->
+							<div class="card-body">
+								<canvas id="myChart1"  height="100"></canvas>
+								<script>
+
+
+                                    $.ajax({
+                                        type: "GET",
+                                        async:false,
+                                        url: base+"/pembelian_produk/transaksi",
+                                        data: {"data":"data"},
+                                        dataType: "text",
+                                        cache:false,
+                                        success:
+                                            function(data){
+                                                data=JSON.parse(data);
+                                                var ctx = document.getElementById('myChart1');
+                                                var myChart = new Chart(ctx, {
+                                                    type: 'line',
+                                                    data: {
+                                                        labels: ['Days 1', 'Days 2', 'Days 3', 'Days 4', 'Days 5', 'Days 6','Days 7'],
+                                                        datasets: [{
+                                                            label: 'Pembelian Produk Perminggu',
+                                                            data: data,
+                                                            backgroundColor: [
+                                                                'rgba(255, 99, 132, 0.2)',
+                                                                'rgba(54, 162, 235, 0.2)',
+                                                                'rgba(255, 206, 86, 0.2)',
+                                                                'rgba(75, 192, 192, 0.2)',
+                                                                'rgba(153, 102, 255, 0.2)',
+                                                                'rgba(255, 159, 64, 0.2)',
+                                                                'rgba(255, 159, 64, 0.2)'
+                                                            ],
+                                                            borderColor: [
+                                                                'rgba(255, 99, 132, 1)',
+                                                                'rgba(54, 162, 235, 1)',
+                                                                'rgba(255, 206, 86, 1)',
+                                                                'rgba(75, 192, 192, 1)',
+                                                                'rgba(153, 102, 255, 1)',
+                                                                'rgba(255, 159, 64, 1)',
+                                                                'rgba(255, 159, 64, 1)'
+                                                            ],
+                                                            borderWidth: 1
+                                                        }]
+                                                    },
+                                                    options: {
+                                                        scales: {
+                                                            yAxes: [{
+                                                                ticks: {
+                                                                    beginAtZero: true
+                                                                }
+                                                            }]
+                                                        }
+                                                    }
+                                                });
+
+                                            }
+                                    });
+
+
+								</script>
 
 							</div>
 						</div>
@@ -159,38 +308,9 @@
 
 
 <script>
-    $.ajax({
-        type: "POST",
-        url: "http://localhost/pupr_new/admin/hitung/",
-        data: {"id": "1"},
-        dataType: "text",
-        cache:false,
-        success:
-            function(data){
-                data=JSON.parse(data);
-                console.log(data);
-                console.log(data.harian[0].harian);
-                var ctx = document.getElementById('myChart').getContext('2d');
-                var chart = new Chart(ctx, {
-                    // The type of chart we want to create
-                    type: 'line',
 
-                    // The data for our dataset
-                    data: {
-                        labels: ['Paket', 'Laporan Harian', 'Lapoan Pengawasan', 'Laporan Perencanaan'],
-                        datasets: [{
-                            label: 'Jumlah Laporan',
-                            backgroundColor: 'rgb(255, 99, 132)',
-                            borderColor: 'rgb(255, 99, 132)',
-                            data: [data.paket[0].paket, data.harian[0].harian, data.pengawasan[0].pengawasan, data.perencanaan[0].perencanaan]
-                        }]
-                    },
 
-                    // Configuration options go here
-                    options: {}
-                });
-            }
-    });
+
 </script>
 
 

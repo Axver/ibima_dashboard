@@ -151,7 +151,7 @@
 												<?php
 												echo anchor(site_url('exclusive/read/'.$exclusive->id),'Read');
 												echo ' | ';
-												
+
 												echo anchor(site_url('exclusive/delete/'.$exclusive->id),'Delete','onclick="javasciprt: return confirm(\'Are You Sure ?\')"');
 												?>
 											</td>

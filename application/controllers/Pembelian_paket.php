@@ -47,6 +47,22 @@ class Pembelian_paket extends CI_Controller
         $this->load->view('pembelian_paket/pembelian_paket_list', $data);
     }
 
+    public function transaksi()
+	{
+		$tujuh=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 1 DAY )')->result();
+		$enam=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 2 DAY )')->result();
+		$lima=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 3 DAY )')->result();
+		$empat=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 4 DAY )')->result();
+		$tiga=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 5 DAY )')->result();
+		$dua=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 6 DAY )')->result();
+		$satu=$this->db->query('SELECT count(id_pembelian) as one FROM pembelian_paket WHERE DATE(created_at) = DATE(NOW() - INTERVAL 7 DAY )')->result();
+
+		$data=array($satu[0]->one,$dua[0]->one,$tiga[0]->one,$empat[0]->one,$lima[0]->one,$enam[0]->one,$tujuh[0]->one);
+
+		echo json_encode($data);
+
+	}
+
     public function read($id) 
     {
         $row = $this->Pembelian_paket_model->get_by_id($id);

@@ -169,7 +169,7 @@
 			<div class="bg-white py-2 collapse-inner rounded">
 				<h6 class="collapse-header">Setting</h6>
 				<a class="collapse-item" href="<?php echo base_url('users') ?>">Users</a>
-				<a class="collapse-item" href="<?php echo base_url('#') ?>">Logout</a>
+
 
 
 
